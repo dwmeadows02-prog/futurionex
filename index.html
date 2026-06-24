@@ -389,9 +389,27 @@
     .pending-item span, .pending-item p { color: var(--muted); font-size: .93rem; }
     .pending-pill { justify-self: start; padding: .35rem .58rem; border-radius: 999px; background: var(--amber-soft); color: #684509; font-weight: 900; font-size: .78rem; }
 
+
+
+    .check-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .check-card { padding: 20px; border-radius: 18px; border: 1px solid var(--line); background: var(--paper); }
+    .check-card strong { display: block; color: var(--slate); margin-bottom: .4rem; }
+    .check-card p { color: var(--muted); font-size: .93rem; }
+    .process-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+    .process-step { padding: 18px; border-radius: 18px; background: #fffaf1; border: 1px solid var(--line); }
+    .process-step b { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 10px; background: var(--blue); color: #fff; margin-bottom: .75rem; }
+    .process-step strong { display: block; color: var(--slate); margin-bottom: .25rem; }
+    .process-step span { color: var(--muted); font-size: .9rem; }
+    .gap-list { display: grid; gap: 10px; }
+    .gap-item { display: grid; grid-template-columns: 1fr 160px; gap: 14px; padding: 15px 16px; border-radius: 14px; background: #fffaf1; border: 1px solid var(--line); }
+    .gap-item b { color: var(--slate); }
+    .gap-item span { color: var(--muted); font-size: .9rem; }
+    .gap-status { justify-self: start; align-self: start; padding: .35rem .55rem; border-radius: 999px; background: var(--amber-soft); color: #684509; font-weight: 900; font-size: .76rem; }
+
     @media (max-width: 900px) {
-      .hero-grid, .overview-grid, .two-col, .deep-dive-grid, .source-grid, .verdict-grid, .license-note-grid { grid-template-columns: 1fr; }
-      .pending-item { grid-template-columns: 1fr; }
+      .hero-grid, .overview-grid, .two-col, .deep-dive-grid, .source-grid, .verdict-grid, .license-note-grid, .check-grid { grid-template-columns: 1fr; }
+      .pending-item, .gap-item { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
       .registry-top { grid-template-columns: 1fr; }
       .feature-grid { grid-template-columns: 1fr 1fr; }
       .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -406,7 +424,7 @@
       .hero { padding-top: 46px; }
       .review-top { display: block; }
       .rating { text-align: left; margin-top: 1rem; }
-      .metric-grid, .feature-grid, .product-grid { grid-template-columns: 1fr; }
+      .metric-grid, .feature-grid, .product-grid, .process-grid { grid-template-columns: 1fr; }
       .score-card, .risk { border-radius: 22px; padding: 22px; }
       .footer-inner { display: block; }
       .footer-inner p + p { margin-top: 1rem; }
@@ -424,6 +442,7 @@
         <a href="#overview">Visão geral</a>
         <a href="#rating">Avaliação</a>
         <a href="#features">Tecnologia</a>
+        <a href="#operations">Operação</a>
         <a href="#sources">Notícias</a>
         <a href="#licenses">Licenças</a>
         <a href="#risk">Risco</a>
@@ -444,7 +463,7 @@
           </div>
           <div class="note-strip">
             <span>ⓘ</span>
-            <p><strong>Nota editorial:</strong> este é um site de análise independente em <strong>futurionex.net</strong>. O site oficial da plataforma é <strong>futurionex.com</strong>. O conteúdo abaixo é informativo e usa fontes públicas como referência editorial; não constitui recomendação de investimento, solicitação de cadastro, consultoria financeira ou garantia de desempenho.</p>
+            <p><strong>Nota editorial:</strong> este é um site de análise independente em <strong>futurionex.net</strong>. O site oficial da plataforma é <strong>futurionex.com</strong>. Registro destacado: <strong>MSB Registration No. 31000306664085</strong>. O conteúdo abaixo é informativo e usa fontes públicas como referência editorial; não constitui recomendação de investimento, solicitação de cadastro, consultoria financeira ou garantia de desempenho.</p>
           </div>
         </div>
 
@@ -466,10 +485,10 @@
             <span class="pill">✓ Ferramentas Web & API</span>
           </div>
           <div class="metric-grid">
-            <div class="metric"><small>Tipo</small><b>Ativos digitais</b></div>
-            <div class="metric"><small>Perfil</small><b>Varejo & institucional</b></div>
-            <div class="metric"><small>Custódia</small><b>Cold storage / MPC</b></div>
-            <div class="metric"><small>Verificação</small><b>AML / KYC</b></div>
+            <div class="metric"><small>Legal Name</small><b>Futurionex Blockchain Trading Ltd</b></div>
+            <div class="metric"><small>MSB Registration No.</small><b>31000306664085</b></div>
+            <div class="metric"><small>SEC CIK No.</small><b>0002084764</b></div>
+            <div class="metric"><small>FSP / NZBN</small><b>FSP1011374 / 9429053284082</b></div>
           </div>
         </aside>
       </div>
@@ -648,6 +667,56 @@
       </div>
     </section>
 
+    <section id="operations">
+      <div class="container">
+        <div class="section-head">
+          <h2>Operational details that matter before using Futurionex</h2>
+          <p>Preenche lacunas comuns em sites de análise: estrutura de taxas, depósitos e levantamentos, KYC, segurança no apoio ao cliente, mobile/API e fluxo de utilização.</p>
+        </div>
+        <div class="check-grid">
+          <div class="check-card"><strong>Fee structure</strong><p>As informações públicas indicam que as taxas da Futurionex incluem principalmente taxas de negociação, taxas de levantamento e custos relacionados com a rede. Os valores reais de maker/taker, descontos VIP, taxas de levantamento por ativo e tarifas promocionais devem ser confirmados no painel oficial.</p></div>
+          <div class="check-card"><strong>Deposits</strong><p>O utilizador deve confirmar o ativo, a rede blockchain, o depósito mínimo, o número de confirmações e a etiqueta/memo do endereço de depósito. Escolher a rede errada pode tornar os fundos irrecuperáveis.</p></div>
+          <div class="check-card"><strong>Withdrawals</strong><p>Os levantamentos normalmente envolvem 2FA, verificação de endereço, triagem de risco e transmissão on-chain. Valores elevados ou endereços incomuns podem passar por revisão manual ou análise de conformidade.</p></div>
+          <div class="check-card"><strong>KYC levels</strong><p>O KYC pode afetar o acesso a funcionalidades completas, limites de levantamento e revisões de risco. O utilizador deve confirmar os requisitos de identificação, comprovativo de morada, prazo de revisão e restrições regionais.</p></div>
+          <div class="check-card"><strong>Customer support</strong><p>O apoio oficial nunca deve pedir palavras-passe, códigos de verificação, chaves privadas, frases-semente ou acesso remoto. Levantamentos anómalos devem ser tratados através do sistema de tickets ou centro de ajuda oficial.</p></div>
+          <div class="check-card"><strong>Mobile / API</strong><p>A aplicação móvel é adequada para gestão de conta e cotações em tempo real; a API é indicada para utilizadores avançados, consultas automatizadas e integração de estratégias. As permissões da API devem ser minimizadas e rodadas regularmente.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="user-flow">
+      <div class="container">
+        <div class="section-head">
+          <h2>Suggested user flow</h2>
+          <p>Fluxo padrão organizado com base em guias públicos de utilização, para ajudar os visitantes a compreender o percurso de uso da Futurionex.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step"><b>1</b><strong>Register</strong><span>Registe-se com e-mail, defina uma palavra-passe forte e confirme a conta.</span></div>
+          <div class="process-step"><b>2</b><strong>Complete KYC</strong><span>Envie os documentos de identidade e aguarde a revisão para desbloquear funcionalidades completas e limites de levantamento.</span></div>
+          <div class="process-step"><b>3</b><strong>Deposit assets</strong><span>Escolha o ativo e a rede, copie o endereço de depósito e faça primeiro um teste com valor reduzido.</span></div>
+          <div class="process-step"><b>4</b><strong>Trade carefully</strong><span>Confirme o par de negociação, tipo de ordem, slippage, taxas e volatilidade do mercado.</span></div>
+          <div class="process-step"><b>5</b><strong>Withdraw safely</strong><span>Verifique o endereço, a rede, a etiqueta/memo, o 2FA e o hash da transação on-chain.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="missing-info">
+      <div class="container">
+        <div class="section-head">
+          <h2>Information still requiring official confirmation</h2>
+          <p>Estas são informações que a página ainda não deve apresentar como definitivas, salvo se o site oficial ou registos públicos fornecerem dados verificáveis.</p>
+        </div>
+        <div class="card body gap-list">
+          <div class="gap-item"><div><b>Exact maker / taker fee schedule</b><br /><span>Requer confirmação através da página oficial de taxas ou de captura/link do painel autenticado.</span></div><span class="gap-status">Needs official source</span></div>
+          <div class="gap-item"><div><b>Supported coin list and trading pairs</b><br /><span>Requer confirmação pela página oficial de mercados, endpoint de mercado da API ou anúncio de ativos.</span></div><span class="gap-status">Needs official source</span></div>
+          <div class="gap-item"><div><b>Official app download links</b><br /><span>Requer confirmação por links da App Store, Google Play, página oficial do APK ou QR code no site oficial.</span></div><span class="gap-status">Needs official source</span></div>
+          <div class="gap-item"><div><b>Proof of reserves / audit reports</b><br /><span>Se a plataforma disponibilizar prova de reservas, auditoria de terceiros ou endereços de carteira, devem ser adicionados links separados.</span></div><span class="gap-status">Not confirmed</span></div>
+          <div class="gap-item"><div><b>Official support URL and status page</b><br /><span>O centro de ajuda, sistema de tickets, página de estado e centro de anúncios devem ser distinguidos das redes sociais.</span></div><span class="gap-status">Needs official source</span></div>
+          <div class="gap-item"><div><b>Pending license application numbers</b><br /><span>Licenças em pedido devem incluir jurisdição, nome da entidade, número do pedido, data e link de consulta; caso contrário, devem ser tratadas apenas como watchlist.</span></div><span class="gap-status">Pending confirmation</span></div>
+        </div>
+      </div>
+    </section>
+
     <section id="sources">
       <div class="container">
         <div class="section-head">
@@ -698,6 +767,31 @@
             <p>O arquivo público da SEC identifica Futurionex Blockchain Trading Ltd com CIK 0002084764, endereço em 675 15TH STREET, DENVER, CO 80202, e Form D protocolado em 2025-09-08. Este registro confirma dados corporativos e de oferta, mas não deve ser lido como licença operacional completa de exchange.</p>
             <a href="https://data.sec.gov/submissions/CIK0002084764.json" target="_blank" rel="noopener noreferrer">View SEC data →</a>
           </article>
+
+          <article class="card source-card">
+            <div class="source-meta"><span>HackMD</span><span>Fees reference</span></div>
+            <h3>Futurionex fees explained</h3>
+            <p>Este material público divide os custos em taxas de negociação, taxas de levantamento e potenciais custos de rede/slippage/spread, lembrando que as taxas reais podem variar conforme o ativo, congestionamento da rede e condições de mercado.</p>
+            <a href="https://hackmd.io/@HimalayaInvestment/HJMAFyO6Zl" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>HackMD</span><span>User guide</span></div>
+            <h3>How to use Futurionex Exchange</h3>
+            <p>Este guia resume o fluxo linear de registo, KYC, depósito, negociação e levantamento, e alerta os utilizadores para evitarem escolher a rede errada, ignorar verificações ou negociar sem compreender as taxas.</p>
+            <a href="https://hackmd.io/@HimalayaInvestment/BJeLTG46Zx" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>HackMD</span><span>Support / FAQ</span></div>
+            <h3>Frequently asked trading questions</h3>
+            <p>Esta FAQ destaca levantamentos não recebidos, revisão de levantamentos, escolha de rede incorreta e segurança no apoio ao cliente, reforçando que não se deve fornecer palavras-passe, códigos de verificação, chaves privadas ou frases-semente a suporte por mensagem privada.</p>
+            <a href="https://hackmd.io/@bellcantu/BkygUdixGg" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>HackMD</span><span>Safety review</span></div>
+            <h3>Is Futurionex Exchange safe and reliable?</h3>
+            <p>Este material descreve a abordagem de segurança da Futurionex em quatro dimensões — segurança de login, alertas de risco, verificação de levantamentos e apresentação de ativos — e observa que os riscos em plataformas cripto continuam ligados às condições de mercado e ao comportamento do utilizador.</p>
+            <a href="https://hackmd.io/@HimalayaInvestment/HysRY0R3-x" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
         </div>
         <div class="source-note"><strong>Source policy:</strong> links de comunidade e artigos externos são tratados como fontes públicas de referência, não como prova definitiva. Sempre confirme dados, datas e escopo nas páginas originais.</div>
       </div>
@@ -707,14 +801,14 @@
       <div class="container">
         <div class="section-head">
           <h2>Licenses, registrations and verification links</h2>
-          <p>测评站域名为 <strong>futurionex.net</strong>；平台官网为 <strong>futurionex.com</strong>。以下信息用于牌照/注册说明，并尽量附上可查证入口。</p>
+          <p>O domínio do site de análise é <strong>futurionex.net</strong>； o site oficial da plataforma é <strong>futurionex.com</strong>. As informações abaixo servem para explicar licenças/registos e, sempre que possível, incluem pontos de verificação.</p>
         </div>
 
         <div class="registry-panel">
           <div class="registry-top">
             <div>
               <h3>Futurionex Blockchain Trading Ltd — registry summary</h3>
-              <p>核心登记信息、官方查询链接与范围说明集中展示，方便访客自行核验。</p>
+              <p>As principais informações de registo, links oficiais de consulta e notas de âmbito são apresentados em conjunto para facilitar a verificação pelos visitantes.</p>
             </div>
             <span class="status-badge">✓ Public registry references included</span>
           </div>
@@ -778,7 +872,7 @@
 
         <div class="section-head" style="margin-top:34px">
           <h2>License applications and monitoring status</h2>
-          <p>已经在申请或待公开确认的牌照应与已获注册分开展示。当前公开检索未找到可独立核验的新增申请编号，因此先按“pending confirmation”处理，避免夸大。</p>
+          <p>Licenças já em pedido ou ainda pendentes de confirmação pública devem ser apresentadas separadamente dos registos concedidos. A pesquisa pública atual não encontrou novos números de pedido verificáveis de forma independente, por isso são tratadas como “pending confirmation” para evitar exageros.</p>
         </div>
         <div class="pending-grid">
           <div class="pending-item">
