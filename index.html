@@ -1,457 +1,840 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ================= SEO & GEO Avançado ================= -->
-    <title>Futurionex Exchange | Meu Portal Pessoal</title>
-    <meta name="description" content="Site pessoal dedicado à análise e introdução da Futurionex, uma das exchanges de criptoativos mais seguras do mundo. Descubra dados de mercado, infraestrutura e licenças (FSP & SEC).">
-    <meta name="keywords" content="Futurionex análise, review Futurionex, introdução à exchange, FSP1011374, licença SEC bitcoin, portal cripto pessoal, infraestrutura blockchain">
-    <meta name="author" content="Especialista em Criptoativos">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.futurionex.com/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futurionex Exchange Review | Portal de Análise Independente</title>
+  <meta name="description" content="Análise independente da Futurionex: visão geral, pontuação, tecnologia, segurança, documentação regulatória, vantagens, pontos de atenção e aviso de risco." />
+  <meta name="keywords" content="Futurionex review, Futurionex análise, exchange cripto, ativos digitais, FSP1011374, SEC EDGAR, segurança cripto" />
+  <meta name="author" content="Portal de Análise Independente" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <link rel="canonical" href="https://www.futurionex.net/" />
 
-    <!-- GEO Targeting (Foco Lusófono) -->
-    <meta name="geo.region" content="PT, BR, AO, MZ" />
-    <meta name="geo.placename" content="Lisbon" />
-    <meta name="geo.position" content="38.7223;-9.1393" />
-    <meta name="ICBM" content="38.7223, -9.1393" />
-    <meta http-equiv="content-language" content="pt-pt, pt-br">
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:title" content="Futurionex Exchange Review" />
+  <meta property="og:description" content="Portal informativo com visão geral, avaliação, vantagens, pontos de atenção e documentos públicos relacionados à Futurionex." />
+  <meta property="og:url" content="https://www.futurionex.net/" />
+  <meta property="og:site_name" content="Portal de Análise Futurionex" />
 
-    <!-- Open Graph (Facebook/LinkedIn) -->
-    <meta property="og:type" content="profile">
-    <meta property="og:locale" content="pt_PT">
-    <meta property="og:url" content="https://www.futurionex.com/">
-    <meta property="og:title" content="Meu Portal Pessoal: Introdução à Futurionex">
-    <meta property="og:description" content="Uma análise técnica e regulatória detalhada sobre a exchange Futurionex. Explore a segurança institucional, conformidade FSP/SEC e tecnologia de ponta.">
-    <meta property="og:site_name" content="Portal de Análise Futurionex">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "name": "Futurionex Exchange Review",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "Futurionex"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Portal de Análise Independente"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "4.3",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "description": "Análise informativa sobre a infraestrutura, documentação pública, segurança e pontos de atenção da Futurionex."
+  }
+  </script>
 
-    <!-- JSON-LD (Schema.org) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Introdução à Futurionex",
-      "url": "https://www.futurionex.com/",
-      "description": "Portal pessoal focado em apresentar as inovações, licenças e tecnologias da corretora de criptomoedas Futurionex.",
-      "author": {
-        "@type": "Person",
-        "name": "Especialista Blockchain"
-      }
+  <style>
+    :root {
+      --bg: #f7f4ec;
+      --paper: #fffdf8;
+      --ink: #17231c;
+      --muted: #6d746c;
+      --line: #e6dcc9;
+      --soft: #e9f5ed;
+      --blue: #356b45;
+      --blue-dark: #244c30;
+      --green: #3f7a4d;
+      --green-soft: #dfeadd;
+      --amber: #c48a2c;
+      --amber-soft: #fff1d1;
+      --red: #b85c38;
+      --red-soft: #ffe4d8;
+      --slate: #112016;
+      --shadow: 0 24px 70px rgba(36, 76, 48, .13);
+      --radius-xl: 30px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --container: 1180px;
+      --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
     }
-    </script>
 
-    <!-- ================= Estilos CSS (Cyberpunk / High-Tech) ================= -->
-    <style>
-        :root {
-            --bg-dark: #050914;
-            --bg-panel: rgba(13, 20, 38, 0.75);
-            --bg-panel-hover: rgba(22, 33, 61, 0.85);
-            --neon-blue: #00f2fe;
-            --neon-blue-glow: rgba(0, 242, 254, 0.5);
-            --neon-green: #00ff87;
-            --text-main: #f8fafc;
-            --text-secondary: #94a3b8;
-            --border-color: rgba(0, 242, 254, 0.15);
-            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-            --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at 9% 7%, rgba(196, 138, 44, .22), transparent 32rem),
+        radial-gradient(circle at 88% 0%, rgba(53, 107, 69, .16), transparent 30rem),
+        linear-gradient(180deg, #fffaf0 0%, var(--bg) 46%, #efe7d7 100%);
+      color: var(--ink);
+      font-family: var(--font);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--blue-dark); text-decoration: none; }
+    a:hover { color: var(--red); text-decoration: underline; }
+    .container { width: min(var(--container), calc(100% - 40px)); margin: 0 auto; }
+    .muted { color: var(--muted); }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .42rem .72rem;
+      border: 1px solid rgba(53, 107, 69, .22);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, .78);
+      color: var(--blue-dark);
+      font-weight: 850;
+      font-size: .78rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: .78rem 1.12rem;
+      border-radius: 999px;
+      font-weight: 850;
+      border: 1px solid transparent;
+      transition: .2s ease;
+      text-decoration: none !important;
+      white-space: nowrap;
+    }
+    .btn.primary { background: var(--blue); color: #fff; box-shadow: 0 14px 28px rgba(53,107,69,.24); }
+    .btn.primary:hover { background: var(--blue-dark); color: #fff; transform: translateY(-1px); }
+    .btn.ghost { background: rgba(255,255,255,.72); color: var(--ink); border-color: var(--line); }
+    .btn.ghost:hover { border-color: #ccb997; color: var(--ink); transform: translateY(-1px); }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; font-size: 16px; }
-        
-        body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: var(--font-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-            background-image: 
-                linear-gradient(rgba(0, 242, 254, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 242, 254, 0.03) 1px, transparent 1px);
-            background-size: 30px 30px;
-            background-attachment: fixed;
-        }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 253, 248, .86);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(230, 220, 201, .92);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 76px;
+      gap: 1.5rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .76rem;
+      font-weight: 950;
+      letter-spacing: -.03em;
+      color: var(--ink);
+      font-size: 1.17rem;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--blue), #8aa05e 58%, var(--amber));
+      color: #fff;
+      box-shadow: 0 15px 30px rgba(53, 107, 69, .25);
+    }
+    .nav-links { display: flex; align-items: center; gap: 1.35rem; font-size: .93rem; font-weight: 800; }
+    .nav-links a { color: #4f5a50; }
+    .nav-links a:hover { color: var(--blue-dark); text-decoration: none; }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
-        h1, h2, h3, h4 { font-weight: 700; line-height: 1.2; }
-        a { color: var(--neon-blue); text-decoration: none; transition: var(--transition); }
-        
-        .section-padding { padding: 6rem 0; }
-        .text-center { text-align: center; }
-        .gradient-text {
-            background: linear-gradient(135deg, var(--neon-blue), var(--neon-green));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .hero { padding: 80px 0 42px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.06fr .94fr;
+      gap: 34px;
+      align-items: center;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.55rem, 5.2vw, 5.2rem);
+      line-height: .98;
+      letter-spacing: -.06em;
+      color: var(--slate);
+      margin: 1rem 0 1.12rem;
+    }
+    .lead {
+      color: #505d51;
+      font-size: clamp(1.05rem, 1.45vw, 1.22rem);
+      max-width: 68ch;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 1.75rem; }
+    .note-strip {
+      margin-top: 1.45rem;
+      display: flex;
+      gap: .75rem;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: .92rem;
+      max-width: 760px;
+    }
+    .note-strip strong { color: var(--ink); }
 
-        /* Botões Informativos */
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 1.8rem;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            border: 1px solid transparent;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.85rem;
-        }
-        .btn-outline {
-            background: rgba(0, 242, 254, 0.05);
-            border-color: var(--neon-blue);
-            color: var(--neon-blue);
-        }
-        .btn-outline:hover {
-            background: rgba(0, 242, 254, 0.15);
-            box-shadow: 0 0 20px var(--neon-blue-glow);
-            transform: translateY(-2px);
-        }
+    .score-card {
+      position: relative;
+      background: var(--paper);
+      border: 1px solid rgba(230, 220, 201, .94);
+      border-radius: var(--radius-xl);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .score-card:before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 10px;
+      background: linear-gradient(90deg, var(--blue), #8aa05e, var(--amber), var(--red));
+    }
+    .review-top { display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start; margin-bottom: 1.35rem; }
+    .platform-title h2 { font-size: 2rem; letter-spacing: -.045em; line-height: 1.08; color: var(--slate); }
+    .platform-title p { color: var(--muted); font-weight: 700; }
+    .rating { text-align: right; min-width: 130px; }
+    .rating strong { display: block; font-size: 3.2rem; line-height: 1; color: var(--blue); letter-spacing: -.07em; }
+    .rating span { color: var(--muted); font-size: .86rem; font-weight: 850; }
+    .pill-row { display: flex; flex-wrap: wrap; gap: .65rem; margin: 1rem 0 1.25rem; }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .42rem;
+      padding: .5rem .74rem;
+      border-radius: 999px;
+      background: var(--soft);
+      color: var(--blue-dark);
+      font-size: .85rem;
+      font-weight: 850;
+      border: 1px solid rgba(53,107,69,.13);
+    }
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 1.25rem;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 15px;
+      background: #fffaf1;
+    }
+    .metric small { display: block; color: var(--muted); font-weight: 900; text-transform: uppercase; letter-spacing: .05em; font-size: .72rem; }
+    .metric b { display: block; color: var(--slate); font-size: 1.03rem; margin-top: .12rem; }
 
-        /* Header */
-        header {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 1000;
-            background: rgba(5, 9, 20, 0.9);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 80px;
-        }
-        .logo { font-size: 1.4rem; font-weight: 900; letter-spacing: 1px; color: #fff; }
-        .logo span { color: var(--neon-blue); }
-        
-        .nav-links { display: flex; gap: 2.5rem; }
-        .nav-links a { color: var(--text-secondary); font-weight: 500; font-size: 0.95rem; }
-        .nav-links a:hover { color: var(--neon-blue); }
+    section { padding: 48px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 2rem; margin-bottom: 23px; }
+    .section-head h2 { font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.75rem); letter-spacing: -.045em; color: var(--slate); line-height: 1.05; }
+    .section-head p { max-width: 58ch; color: var(--muted); }
 
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-        }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 12px 34px rgba(36,76,48,.06);
+    }
+    .body { padding: 24px; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .list-card { padding: 24px; }
+    .list-card h3 { font-size: 1.18rem; margin-bottom: .9rem; color: var(--slate); }
+    .list { list-style: none; display: grid; gap: .82rem; }
+    .list li { display: grid; grid-template-columns: 26px 1fr; gap: .7rem; align-items: start; color: #4f5a50; }
+    .icon { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: .76rem; font-weight: 950; }
+    .good .icon { color: var(--blue-dark); background: var(--green-soft); }
+    .warn .icon { color: var(--red); background: var(--red-soft); }
 
-        /* Hero Section */
-        .hero {
-            padding-top: 160px;
-            padding-bottom: 80px;
-            text-align: center;
-        }
-        .hero-badge {
-            display: inline-block;
-            padding: 0.4rem 1rem;
-            background: rgba(0, 255, 135, 0.1);
-            border: 1px solid var(--neon-green);
-            color: var(--neon-green);
-            border-radius: 50px;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1.5rem;
-        }
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 1.5rem;
-        }
-        .hero p {
-            font-size: 1.15rem;
-            color: var(--text-secondary);
-            max-width: 700px;
-            margin: 0 auto 2.5rem;
-        }
+    .overview-grid { display: grid; grid-template-columns: 1.18fr .82fr; gap: 18px; }
+    .article { padding: 28px; }
+    .article p + p { margin-top: 1rem; }
+    .article h3 { color: var(--slate); margin: 1.4rem 0 .55rem; font-size: 1.25rem; }
+    .info-table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 16px; }
+    .info-table tr { border-bottom: 1px solid var(--line); }
+    .info-table tr:last-child { border-bottom: 0; }
+    .info-table th, .info-table td { text-align: left; vertical-align: top; padding: 15px 16px; }
+    .info-table th { width: 38%; color: var(--muted); font-size: .86rem; text-transform: uppercase; letter-spacing: .04em; background: #f8f0df; }
+    .info-table td { color: #334238; font-weight: 650; }
 
-        /* Seção Pessoal / Review */
-        .personal-review {
-            background: var(--bg-panel);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            padding: 3rem;
-            margin-top: 2rem;
-            backdrop-filter: blur(10px);
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
-        .review-content h2 { margin-bottom: 1rem; font-size: 2rem; }
-        .review-content p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.05rem; }
-        
-        @media (max-width: 768px) {
-            .personal-review { flex-direction: column; padding: 2rem; }
-        }
+    .score-bars { display: grid; gap: 14px; }
+    .bar-row { display: grid; gap: 7px; }
+    .bar-label { display: flex; justify-content: space-between; color: #334238; font-weight: 850; font-size: .95rem; }
+    .bar { height: 10px; background: #eadfcb; border-radius: 99px; overflow: hidden; }
+    .bar span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), #8aa05e); }
 
-        /* Mercados (Visualização de Dados) */
-        .market-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: var(--bg-panel);
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid var(--border-color);
-            margin-top: 2rem;
-        }
-        .market-table th, .market-table td {
-            padding: 1.2rem;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
-            text-align: left;
-        }
-        .market-table th { color: var(--text-secondary); text-transform: uppercase; font-size: 0.85rem; }
-        .market-table td { font-family: var(--font-mono); font-size: 1.05rem; }
-        .text-green { color: var(--neon-green); }
-        .text-red { color: #ff4a6b; }
+    .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .feature { padding: 24px; }
+    .feature .num { color: var(--blue); font-weight: 950; font-size: .88rem; letter-spacing: .08em; }
+    .feature h3 { margin: .45rem 0 .6rem; color: var(--slate); font-size: 1.17rem; }
+    .feature p { color: var(--muted); }
 
-        /* Grade de Funcionalidades */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        .tech-card {
-            background: rgba(10, 15, 30, 0.6);
-            border: 1px solid rgba(255,255,255,0.05);
-            padding: 2.5rem;
-            border-radius: 12px;
-            transition: var(--transition);
-        }
-        .tech-card:hover {
-            border-color: var(--neon-blue);
-            transform: translateY(-5px);
-            background: rgba(10, 15, 30, 0.9);
-        }
-        .tech-card h3 { color: #fff; margin-bottom: 1rem; font-size: 1.3rem; }
-        .tech-card p { color: var(--text-secondary); font-size: 0.95rem; }
+    .license-grid { display: grid; gap: 16px; }
+    .license {
+      padding: 22px;
+      border-left: 5px solid var(--blue);
+      background: var(--paper);
+      border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .license.green { border-left-color: var(--green); }
+    .license.purple { border-left-color: var(--amber); }
+    .license h3 { color: var(--slate); margin-bottom: .35rem; }
+    .raw {
+      margin-top: 1rem;
+      padding: 14px;
+      border-radius: 12px;
+      background: #fffaf1;
+      border: 1px dashed #ccb997;
+      color: #334238;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: .86rem;
+      word-break: break-word;
+    }
 
-        /* Seção Regulatória (Licenças Obrigatórias) */
-        .license-section {
-            position: relative;
-            padding: 4rem 3rem;
-            background: linear-gradient(180deg, rgba(0, 242, 254, 0.05) 0%, rgba(0,0,0,0) 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 16px;
-            margin-top: 4rem;
-        }
-        .license-item {
-            background: #000;
-            border-left: 4px solid var(--neon-blue);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 0 8px 8px 0;
-        }
-        .license-item.sec { border-left-color: var(--neon-green); }
-        .license-item h3 { margin-bottom: 0.5rem; }
-        .license-raw-text {
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            color: #a3b8cc;
-            word-break: break-all;
-            background: rgba(255,255,255,0.05);
-            padding: 1rem;
-            border-radius: 6px;
-            margin-top: 1rem;
-            line-height: 1.5;
-        }
-        .license-raw-text a {
-            color: var(--neon-blue);
-            text-decoration: underline;
-        }
+    .risk {
+      background: #17231c;
+      color: #f8f4ea;
+      border-radius: var(--radius-xl);
+      padding: 30px;
+      box-shadow: var(--shadow);
+    }
+    .risk h2 { font-family: var(--serif); font-size: 2.2rem; letter-spacing: -.04em; margin-bottom: .65rem; }
+    .risk p { color: #d8ddcf; }
+    .risk-list { margin-top: 1rem; display: grid; gap: .65rem; color: #eef2e7; padding-left: 1.2rem; }
 
-        /* Footer */
-        footer {
-            border-top: 1px solid var(--border-color);
-            padding: 3rem 0;
-            margin-top: 4rem;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-    </style>
+    footer { padding: 42px 0; color: var(--muted); font-size: .9rem; }
+    .footer-inner { border-top: 1px solid var(--line); padding-top: 26px; display: flex; justify-content: space-between; gap: 1rem; align-items: start; }
+    .footer-inner strong { color: var(--slate); }
+
+
+
+    .deep-dive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .deep-card { padding: 24px; }
+    .deep-card h3 { color: var(--slate); font-size: 1.22rem; margin-bottom: .65rem; }
+    .deep-card p { color: var(--muted); }
+    .deep-card p + p { margin-top: .8rem; }
+
+    .product-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .product { padding: 20px; border-radius: 18px; background: #fffaf1; border: 1px solid var(--line); }
+    .product strong { display: block; color: var(--slate); margin-bottom: .35rem; }
+    .product span { color: var(--muted); font-size: .92rem; }
+
+    .comparison { overflow-x: auto; }
+    .comparison table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    .comparison th, .comparison td { padding: 15px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    .comparison th { color: var(--slate); background: #f8f0df; font-size: .88rem; text-transform: uppercase; letter-spacing: .04em; }
+    .comparison td { color: #334238; }
+
+    .timeline { display: grid; gap: 14px; }
+    .timeline-item { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding: 20px; }
+    .timeline-item time { color: var(--blue-dark); font-weight: 900; }
+    .timeline-item h3 { color: var(--slate); margin-bottom: .3rem; }
+    .timeline-item p { color: var(--muted); }
+
+    .faq { display: grid; gap: 12px; }
+    .faq details { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; box-shadow: 0 10px 24px rgba(36,76,48,.04); }
+    .faq summary { cursor: pointer; color: var(--slate); font-weight: 900; }
+    .faq p { margin-top: .75rem; color: var(--muted); }
+
+
+
+    .source-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .source-card { padding: 22px; position: relative; overflow: hidden; }
+    .source-card:before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--blue), var(--amber)); }
+    .source-card .source-meta { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .75rem; color: var(--muted); font-size: .82rem; font-weight: 850; }
+    .source-card h3 { color: var(--slate); font-size: 1.14rem; line-height: 1.35; margin-bottom: .65rem; }
+    .source-card p { color: var(--muted); font-size: .95rem; }
+    .source-card a { display: inline-flex; margin-top: 1rem; font-weight: 900; }
+    .source-note { margin-top: 16px; padding: 18px; border-radius: 16px; background: var(--amber-soft); color: #684509; border: 1px solid #efd18c; }
+
+    .verdict-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; align-items: stretch; }
+    .verdict-card { padding: 24px; }
+    .verdict-card h3 { color: var(--slate); margin-bottom: .7rem; }
+    .verdict-card p, .verdict-card li { color: var(--muted); }
+    .verdict-card ul { margin-top: .75rem; padding-left: 1.2rem; display: grid; gap: .55rem; }
+
+
+
+    .registry-panel { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-xl); box-shadow: 0 12px 34px rgba(36,76,48,.06); overflow: hidden; }
+    .registry-top { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; padding: 24px; border-bottom: 1px solid var(--line); background: linear-gradient(135deg, #fffdf8, #fff6e7); }
+    .registry-top h3 { color: var(--slate); font-size: 1.25rem; margin-bottom: .25rem; }
+    .registry-top p { color: var(--muted); }
+    .status-badge { display: inline-flex; align-items: center; gap: .4rem; padding: .45rem .7rem; border-radius: 999px; background: var(--green-soft); color: var(--blue-dark); font-weight: 900; font-size: .82rem; white-space: nowrap; }
+    .registry-table { width: 100%; border-collapse: collapse; }
+    .registry-table th, .registry-table td { padding: 16px 18px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    .registry-table th { width: 22%; color: var(--slate); background: #fbf3e4; font-size: .82rem; text-transform: uppercase; letter-spacing: .05em; }
+    .registry-table td { color: #334238; }
+    .registry-table tr:last-child th, .registry-table tr:last-child td { border-bottom: 0; }
+    .verify-links { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: .7rem; }
+    .verify-link { display: inline-flex; align-items: center; padding: .42rem .62rem; border-radius: 999px; border: 1px solid var(--line); background: #fffaf1; color: var(--blue-dark); font-weight: 850; font-size: .82rem; }
+    .license-note-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+    .license-note { padding: 18px; border-radius: 18px; border: 1px solid var(--line); background: var(--paper); }
+    .license-note strong { display: block; color: var(--slate); margin-bottom: .35rem; }
+    .license-note span { color: var(--muted); font-size: .92rem; }
+    .pending-grid { display: grid; gap: 12px; margin-top: 16px; }
+    .pending-item { display: grid; grid-template-columns: 180px 1fr 190px; gap: 14px; align-items: start; padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: #fffaf1; }
+    .pending-item b { color: var(--slate); }
+    .pending-item span, .pending-item p { color: var(--muted); font-size: .93rem; }
+    .pending-pill { justify-self: start; padding: .35rem .58rem; border-radius: 999px; background: var(--amber-soft); color: #684509; font-weight: 900; font-size: .78rem; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .overview-grid, .two-col, .deep-dive-grid, .source-grid, .verdict-grid, .license-note-grid { grid-template-columns: 1fr; }
+      .pending-item { grid-template-columns: 1fr; }
+      .registry-top { grid-template-columns: 1fr; }
+      .feature-grid { grid-template-columns: 1fr 1fr; }
+      .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .timeline-item { grid-template-columns: 1fr; }
+      .section-head { display: block; }
+      .section-head p { margin-top: .6rem; }
+    }
+    @media (max-width: 680px) {
+      .container { width: min(100% - 28px, var(--container)); }
+      .nav { min-height: 66px; }
+      .nav-links { display: none; }
+      .hero { padding-top: 46px; }
+      .review-top { display: block; }
+      .rating { text-align: left; margin-top: 1rem; }
+      .metric-grid, .feature-grid, .product-grid { grid-template-columns: 1fr; }
+      .score-card, .risk { border-radius: 22px; padding: 22px; }
+      .footer-inner { display: block; }
+      .footer-inner p + p { margin-top: 1rem; }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Futurionex Review Home">
+        <span class="brand-mark">FX</span>
+        <span>Futurionex Review</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#overview">Visão geral</a>
+        <a href="#rating">Avaliação</a>
+        <a href="#features">Tecnologia</a>
+        <a href="#sources">Notícias</a>
+        <a href="#licenses">Licenças</a>
+        <a href="#risk">Risco</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navegação Simples (Foco Informativo) -->
-    <header>
-        <div class="container navbar">
-            <div class="logo">Portal<span>Análise</span></div>
-            <nav class="nav-links">
-                <a href="#visao-geral">Visão Geral</a>
-                <a href="#dados-mercado">Dados de Mercado</a>
-                <a href="#tecnologia">Tecnologia</a>
-                <a href="#certificacoes">Certificações FSP/SEC</a>
-            </nav>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Pesquisa independente · Exchange de ativos digitais</span>
+          <h1>Futurionex Exchange: análise clara, objetiva e orientada a risco.</h1>
+          <p class="lead">Este portal apresenta uma leitura editorial da Futurionex, reunindo pontos fortes, pontos de atenção, documentação pública, recursos tecnológicos, observações de mercado e referências externas recentes para quem deseja compreender a plataforma antes de tomar qualquer decisão.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#rating">Ver avaliação</a>
+            <a class="btn ghost" href="#licenses">Consultar documentos</a>
+          </div>
+          <div class="note-strip">
+            <span>ⓘ</span>
+            <p><strong>Nota editorial:</strong> este é um site de análise independente em <strong>futurionex.net</strong>. O site oficial da plataforma é <strong>futurionex.com</strong>. O conteúdo abaixo é informativo e usa fontes públicas como referência editorial; não constitui recomendação de investimento, solicitação de cadastro, consultoria financeira ou garantia de desempenho.</p>
+          </div>
         </div>
-    </header>
 
-    <!-- Introdução Pessoal -->
-    <section class="hero container">
-        <div class="hero-badge">Pesquisa & Análise Independente</div>
-        <h1>Introdução à Plataforma <br><span class="gradient-text">Futurionex</span></h1>
-        <p>Bem-vindo ao meu site pessoal. Neste espaço, detalho a infraestrutura técnica, a liquidez de mercado e a rigorosa conformidade regulatória que fazem da Futurionex uma referência global no setor de ativos digitais.</p>
-        <a href="#certificacoes" class="btn btn-outline">Verificar Licenças Oficiais</a>
+        <aside class="score-card" aria-label="Resumo da avaliação">
+          <div class="review-top">
+            <div class="platform-title">
+              <h2>Futurionex</h2>
+              <p>Exchange / plataforma de ativos digitais</p>
+            </div>
+            <div class="rating">
+              <strong>4.3</strong>
+              <span>Rating editorial / 5</span>
+            </div>
+          </div>
+          <div class="pill-row">
+            <span class="pill">✓ Segurança multicamada</span>
+            <span class="pill">✓ Infraestrutura global</span>
+            <span class="pill">✓ Foco em compliance</span>
+            <span class="pill">✓ Ferramentas Web & API</span>
+          </div>
+          <div class="metric-grid">
+            <div class="metric"><small>Tipo</small><b>Ativos digitais</b></div>
+            <div class="metric"><small>Perfil</small><b>Varejo & institucional</b></div>
+            <div class="metric"><small>Custódia</small><b>Cold storage / MPC</b></div>
+            <div class="metric"><small>Verificação</small><b>AML / KYC</b></div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <main class="container">
-        
-        <!-- Minha Visão / Review Pessoal -->
-        <section id="visao-geral" class="personal-review">
-            <div class="review-content">
-                <h2>Por que destaco a Futurionex?</h2>
-                <p>Como pesquisador do ecossistema blockchain, analiso dezenas de infraestruturas financeiras. A Futurionex destaca-se não apenas pelo seu motor de correspondência de alta frequência, mas principalmente pelo compromisso com a transparência jurídica.</p>
-                <p>A plataforma adota o conceito de <strong>"Conformidade by Design"</strong>, operando de forma totalmente alinhada às jurisdições mais rigorosas do planeta, unindo a velocidade da Web3 à segurança das Finanças Tradicionais (TradFi).</p>
-            </div>
-        </section>
-
-        <!-- Monitor de Dados (Informativo) -->
-        <section id="dados-mercado" class="section-padding">
-            <h2 class="text-center" style="font-size: 2.2rem; margin-bottom: 1rem;">Desempenho do Motor de Liquidez</h2>
-            <p class="text-center text-secondary">Demonstração da capacidade de processamento em tempo real (Simulação de Dados da Exchange).</p>
-            
-            <div style="overflow-x: auto;">
-                <table class="market-table">
-                    <thead>
-                        <tr>
-                            <th>Par de Negociação</th>
-                            <th>Cotação Indexada</th>
-                            <th>Variação (24h)</th>
-                            <th>Profundidade (Vol)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="market-data">
-                        <!-- Gerado via JS para efeito High-Tech -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- Análise da Tecnologia -->
-        <section id="tecnologia" class="section-padding">
-            <h2 class="text-center" style="font-size: 2.2rem; margin-bottom: 3rem;">Análise da Pilha Tecnológica</h2>
-            
-            <div class="grid-3">
-                <div class="tech-card">
-                    <h3>Cold Storage Geodistribuído</h3>
-                    <p>A exchange utiliza carteiras frias (offline) para armazenar a grande maioria dos fundos, protegidas por chaves fragmentadas via computação multipartidária (MPC).</p>
-                </div>
-                <div class="tech-card">
-                    <h3>Latência Institucional</h3>
-                    <p>Com um núcleo desenvolvido em linguagens de baixo nível, a Futurionex garante a execução de ordens complexas em milissegundos, evitando slippage.</p>
-                </div>
-                <div class="tech-card">
-                    <h3>Conectividade FIX/API</h3>
-                    <p>Projetada para quants e fundos, oferece protocolos de conexão direta idênticos aos utilizados nas bolsas de valores tradicionais de Wall Street.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= CERTIFICAÇÕES (MANDATÓRIO / EXATO) ================= -->
-        <section id="certificacoes" class="license-section">
-            <div class="text-center" style="margin-bottom: 3rem;">
-                <h2 style="font-size: 2.2rem;">Documentação e Licenciamento Oficial</h2>
-                <p class="text-secondary">Informações extraídas diretamente dos registros governamentais internacionais da Futurionex.</p>
-            </div>
-
-            <!-- Registro Nova Zelândia -->
-            <div class="license-item">
-                <h3 style="color: var(--neon-blue);">Registro de Provedor de Serviços Financeiros (Nova Zelândia)</h3>
-                <p class="text-secondary">O escrutínio e licenciamento sob as leis financeiras da Nova Zelândia.</p>
-                
-                <div class="license-raw-text">
-                    FSP<br>
-                    FUTURIONEX BLOCKCHAIN TRADING LIMITED (FSP1011374) (NZBN:9429053284082)<br>
-                    <a href="https://fsp-app.companiesoffice.govt.nz/orp-fsp-register/viewInstance/view.html?id=757b371f1b6eec44bad4008937136b8f85db3f64b1f5470bfa6aeea866cbf71c&_timestamp=14822708354608501" target="_blank" rel="noopener noreferrer">
-                        https://fsp-app.companiesoffice.govt.nz/orp-fsp-register/viewInstance/view.html?id=757b371f1b6eec44bad4008937136b8f85db3f64b1f5470bfa6aeea866cbf71c&_timestamp=14822708354608501
-                    </a>
-                </div>
-            </div>
-
-            <!-- Registro SEC -->
-            <div class="license-item sec">
-                <h3 style="color: var(--neon-green);">Registro Securities and Exchange Commission (EUA)</h3>
-                <p class="text-secondary">Arquivamento EDGAR transparente para validação corporativa nos Estados Unidos.</p>
-                
-                <div class="license-raw-text">
-                    SEC<br>
-                    <a href="https://www.sec.gov/Archives/edgar/data/2084764/000208476425000001/0002084764-25-000001-index.htm" target="_blank" rel="noopener noreferrer">
-                        https://www.sec.gov/Archives/edgar/data/2084764/000208476425000001/0002084764-25-000001-index.htm
-                    </a>
-                </div>
-            </div>
-            
-            <div class="license-item" style="border-left-color: #a855f7;">
-                <h3 style="color: #a855f7;">Conformidade Adicional (AML/KYC)</h3>
-                <p class="text-secondary" style="font-size: 0.95rem;">A plataforma também adere às normas globais do GAFI (Grupo de Ação Financeira) e implementa protocolos avançados de Conheça Seu Cliente (KYC) para prevenção de fraudes e lavagem de dinheiro, garantindo um ecossistema seguro para investidores de todos os portes.</p>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <p style="margin-bottom: 1rem; color: #fff; font-weight: 600;">Meu Portal de Análise | Futurionex</p>
-            <p style="font-size: 0.8rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
-                <strong>Aviso Legal (Disclaimer):</strong> Este é um site estritamente pessoal e informativo, criado para analisar e documentar publicamente a infraestrutura da exchange Futurionex. Eu não represento oficialmente a empresa para fins de suporte, tampouco processo fundos, inscrições ou logins. A negociação de criptomoedas envolve alto risco. Verifique as regulamentações do seu país antes de interagir com plataformas de ativos digitais.
-            </p>
-            <p style="margin-top: 2rem; opacity: 0.5;">&copy; 2026 Portal de Análise Independente. Nenhum dado de usuário é coletado neste site.</p>
+    <section id="overview">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our view of Futurionex</h2>
+          <p>Inspirado no formato de review do site de referência, esta página prioriza leitura rápida, blocos verificáveis e separação clara entre vantagens, limitações e avisos de risco.</p>
         </div>
-    </footer>
 
-    <!-- JavaScript para Animação de Dados (Fins visuais informativos) -->
-    <script>
-        const mockData = [
-            { pair: 'BTC/USDT', price: 92450.00, change: 1.45, vol: '2.4B' },
-            { pair: 'ETH/USDT', price: 3420.50, change: -0.85, vol: '1.1B' },
-            { pair: 'SOL/USDT', price: 215.30, change: 4.10, vol: '840M' },
-            { pair: 'XRP/USDT', price: 0.9850, change: 0.25, vol: '320M' }
-        ];
+        <div class="overview-grid">
+          <article class="card article">
+            <p>A Futurionex é apresentada como uma plataforma de negociação de ativos digitais voltada a usuários que procuram uma experiência mais organizada para acompanhar mercado, executar ordens, proteger ativos e consultar informações de conta em um único ambiente. A proposta combina interface web, recursos mobile, ferramentas analíticas e camadas de controle de risco.</p>
+            <p>Em um setor no qual confiança depende tanto de tecnologia quanto de governança, a análise da Futurionex deve observar quatro áreas: proteção de ativos, estabilidade de execução, transparência documental e clareza das regras de uso. Esses pontos não eliminam os riscos do mercado cripto, mas ajudam o visitante a fazer uma leitura mais estruturada da plataforma.</p>
+            <h3>Leitura editorial</h3>
+            <p>A Futurionex se posiciona como uma exchange moderna com foco em segurança multicamada, verificação de identidade, infraestrutura de negociação e suporte a diferentes perfis de usuário. O ponto forte está na tentativa de reunir experiência simples para iniciantes com ferramentas que também atendem traders mais técnicos.</p>
+            <p>O ponto de atenção é o mesmo de qualquer exchange: o usuário precisa confirmar taxas, disponibilidade regional, requisitos de saque, tempo de processamento, termos oficiais, canais de suporte e documentação regulatória diretamente nas fontes oficiais antes de movimentar recursos.</p>
+          </article>
 
-        const tbody = document.getElementById('market-data');
+          <div class="card body">
+            <table class="info-table" aria-label="Resumo da plataforma">
+              <tbody>
+                <tr><th>Categoria</th><td>Exchange / ativos digitais</td></tr>
+                <tr><th>Uso principal</th><td>Negociação, custódia e gestão de criptoativos</td></tr>
+                <tr><th>Ferramentas</th><td>Web, mobile, gráficos, API e gestão de conta</td></tr>
+                <tr><th>Segurança</th><td>Cold storage, MPC, monitoramento e controle de acesso</td></tr>
+                <tr><th>Compliance</th><td>MSB 31000306664085 · SEC CIK 0002084764 · FSP1011374 / NZBN 9429053284082</td></tr>
+                <tr><th>Atenção</th><td>Criptoativos são voláteis e podem gerar perdas rápidas</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        function formatUSD(num) {
-            return '$ ' + num.toLocaleString('en-US', { minimumFractionDigits: num < 1 ? 4 : 2, maximumFractionDigits: num < 1 ? 4 : 2 });
-        }
+    <section id="rating">
+      <div class="container">
+        <div class="section-head">
+          <h2>Futurionex overall rating: 4.3 / 5</h2>
+          <p>A pontuação abaixo é editorial e serve apenas como síntese visual dos critérios avaliados neste portal.</p>
+        </div>
+        <div class="card body score-bars">
+          <div class="bar-row"><div class="bar-label"><span>Segurança e proteção de ativos</span><span>4.5</span></div><div class="bar"><span style="width:90%"></span></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Infraestrutura e estabilidade</span><span>4.4</span></div><div class="bar"><span style="width:88%"></span></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Ferramentas de negociação</span><span>4.3</span></div><div class="bar"><span style="width:86%"></span></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Transparência documental</span><span>4.1</span></div><div class="bar"><span style="width:82%"></span></div></div>
+          <div class="bar-row"><div class="bar-label"><span>Facilidade para iniciantes</span><span>3.9</span></div><div class="bar"><span style="width:78%"></span></div></div>
+        </div>
+      </div>
+    </section>
 
-        function buildTable() {
-            tbody.innerHTML = '';
-            mockData.forEach((asset, idx) => {
-                const tr = document.createElement('tr');
-                const sign = asset.change >= 0 ? '+' : '';
-                const colorClass = asset.change >= 0 ? 'text-green' : 'text-red';
-                
-                tr.innerHTML = `
-                    <td style="font-weight: 600; color: #fff;">${asset.pair}</td>
-                    <td id="price-${idx}" style="transition: color 0.3s;">${formatUSD(asset.price)}</td>
-                    <td class="${colorClass}">${sign}${asset.change.toFixed(2)}%</td>
-                    <td>${asset.vol}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-        }
+    <section id="editorial-verdict">
+      <div class="container">
+        <div class="section-head">
+          <h2>Editorial verdict: how Futurionex should be evaluated</h2>
+          <p>Uma leitura mais completa combina experiência de negociação, processamento de saques, liquidez, documentação regulatória e clareza dos limites de cada registro.</p>
+        </div>
+        <div class="verdict-grid">
+          <article class="card verdict-card">
+            <h3>Resumo executivo</h3>
+            <p>A Futurionex apresenta uma narrativa de plataforma cripto estruturada: execução rápida, liquidez para pares principais, camadas de segurança para saques, AML/KYC e registros públicos em diferentes jurisdições. O conjunto é positivo para a percepção de maturidade operacional, especialmente quando comparado a exchanges sem documentação, sem políticas claras e sem referências externas.</p>
+            <p>Ao mesmo tempo, a leitura correta deve separar “compliance de entrada” de “supervisão completa de exchange”. Registros como MSB, Reg D e FSP têm utilidade real, mas não equivalem automaticamente a garantia de custódia, proteção contra perdas, auditoria diária de risco ou autorização universal para todos os produtos.</p>
+          </article>
+          <aside class="card verdict-card">
+            <h3>O que verificar antes de usar</h3>
+            <ul>
+              <li>Se o país do usuário é atendido e quais produtos estão disponíveis.</li>
+              <li>Taxas reais de trading, saque, rede blockchain e conversão.</li>
+              <li>Limites por nível KYC e condições que podem ativar revisão manual.</li>
+              <li>Escopo exato dos registros citados: MSB, Reg D, FSP e documentos SEC.</li>
+              <li>Histórico de suporte, status operacional e política de resposta a incidentes.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-        buildTable();
+    <section id="pros-cons">
+      <div class="container two-col">
+        <div class="card list-card good">
+          <h3>Advantages</h3>
+          <ul class="list">
+            <li><span class="icon">✓</span><span>Estrutura visual e operacional voltada para negociação de ativos digitais.</span></li>
+            <li><span class="icon">✓</span><span>Ênfase em segurança: cold storage, controle de acesso, KYC e monitoramento de risco.</span></li>
+            <li><span class="icon">✓</span><span>Ferramentas para diferentes perfis, de usuários comuns a traders com demanda por API.</span></li>
+            <li><span class="icon">✓</span><span>Documentação pública e links de consulta reunidos em uma área separada.</span></li>
+            <li><span class="icon">✓</span><span>Proposta de experiência moderna em web e dispositivos móveis.</span></li>
+          </ul>
+        </div>
+        <div class="card list-card warn">
+          <h3>Points to note</h3>
+          <ul class="list">
+            <li><span class="icon">!</span><span>Ativos digitais são altamente voláteis; perdas podem ocorrer mesmo em plataformas tecnicamente sólidas.</span></li>
+            <li><span class="icon">!</span><span>Taxas, disponibilidade de produtos e regras de saque devem ser conferidas diretamente na plataforma.</span></li>
+            <li><span class="icon">!</span><span>Registros públicos não eliminam a necessidade de due diligence independente.</span></li>
+            <li><span class="icon">!</span><span>Usuários iniciantes devem evitar alavancagem e compreender riscos de liquidez, custódia e mercado.</span></li>
+            <li><span class="icon">!</span><span>Regras regulatórias podem variar conforme o país de residência do usuário.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        // Efeito de atualização em tempo real para simular a API da exchange
-        setInterval(() => {
-            mockData.forEach((asset, idx) => {
-                if (Math.random() > 0.6) {
-                    const diff = (Math.random() - 0.5) * (asset.price * 0.0008);
-                    asset.price += diff;
-                    
-                    const cell = document.getElementById(`price-${idx}`);
-                    cell.textContent = formatUSD(asset.price);
-                    
-                    cell.style.color = diff > 0 ? 'var(--neon-green)' : '#ff4a6b';
-                    setTimeout(() => { cell.style.color = 'inherit'; }, 500);
-                }
-            });
-        }, 2500);
-    </script>
+    <section id="features">
+      <div class="container">
+        <div class="section-head">
+          <h2>Platform content overview</h2>
+          <p>Resumo dos principais componentes técnicos e operacionais observados na proposta da Futurionex.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="card feature"><span class="num">01</span><h3>Custódia e cold storage</h3><p>Modelo de proteção com carteiras frias, segregação de ambientes, revisão de permissões e processos desenhados para reduzir exposição operacional.</p></div>
+          <div class="card feature"><span class="num">02</span><h3>Motor de negociação</h3><p>Infraestrutura voltada a execução estável, livros de ordem, atualização de preços, roteamento de ordens e suporte a alto volume de eventos.</p></div>
+          <div class="card feature"><span class="num">03</span><h3>Ferramentas analíticas</h3><p>Gráficos, indicadores, histórico de mercado, listas de observação e recursos para apoiar decisões com base em dados, não em promessas.</p></div>
+          <div class="card feature"><span class="num">04</span><h3>API e conectividade</h3><p>Camada de integração para usuários avançados, automação, acompanhamento de conta, consulta de mercado e estratégias quantitativas.</p></div>
+          <div class="card feature"><span class="num">05</span><h3>AML/KYC</h3><p>Verificação de identidade, triagem de risco e monitoramento transacional ajudam a reduzir fraude, abuso de conta e risco de lavagem de dinheiro.</p></div>
+          <div class="card feature"><span class="num">06</span><h3>Suporte e experiência</h3><p>Interface organizada, documentação, central de ajuda e canais de atendimento são fatores importantes para a confiança do usuário.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-is">
+      <div class="container">
+        <div class="section-head">
+          <h2>What is Futurionex?</h2>
+          <p>Uma introdução mais completa ao posicionamento da plataforma e ao tipo de usuário que ela procura atender.</p>
+        </div>
+        <div class="deep-dive-grid">
+          <article class="card deep-card">
+            <h3>Uma exchange orientada a infraestrutura</h3>
+            <p>A Futurionex pode ser descrita como uma plataforma de negociação de ativos digitais que procura equilibrar facilidade de uso, segurança operacional e ferramentas técnicas. O objetivo é oferecer um ambiente onde o usuário possa acompanhar preços, executar ordens, gerenciar conta e consultar dados essenciais sem depender de múltiplas ferramentas externas.</p>
+            <p>Para usuários iniciantes, o valor está na navegação clara e nos controles básicos de conta. Para usuários mais experientes, os diferenciais passam por gráficos, APIs, alertas, histórico e maior controle sobre execução.</p>
+          </article>
+          <article class="card deep-card">
+            <h3>O que torna a proposta diferente</h3>
+            <p>O diferencial editorialmente mais relevante não é apenas listar criptoativos, mas apresentar um conjunto de elementos de confiança: segurança de custódia, documentação pública, rotinas AML/KYC, monitoramento de risco e atenção à experiência do usuário.</p>
+            <p>Também merece atenção a combinação de linguagem acessível com recursos avançados. Uma boa plataforma precisa ser simples o bastante para reduzir erros operacionais e completa o bastante para não limitar usuários com maior volume ou maior sofisticação.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-head">
+          <h2>Tradable products and user tools</h2>
+          <p>O conjunto de produtos deve sempre ser conferido na plataforma oficial, mas a estrutura abaixo resume as categorias mais relevantes para uma exchange de ativos digitais.</p>
+        </div>
+        <div class="product-grid">
+          <div class="product"><strong>Spot crypto</strong><span>Compra e venda direta de ativos digitais disponíveis na plataforma.</span></div>
+          <div class="product"><strong>Stablecoins</strong><span>Uso de pares com ativos de menor volatilidade relativa para liquidez e gestão de saldo.</span></div>
+          <div class="product"><strong>Market data</strong><span>Preços, profundidade, histórico, variação e indicadores para leitura de mercado.</span></div>
+          <div class="product"><strong>Account tools</strong><span>Gestão de conta, segurança, verificação, relatórios e histórico de operações.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fees-accounts">
+      <div class="container">
+        <div class="section-head">
+          <h2>Accounts, fees and practical checks</h2>
+          <p>Antes de usar qualquer exchange, o visitante deve confirmar os itens operacionais que afetam custo, liquidez e acesso aos fundos.</p>
+        </div>
+        <div class="card body comparison">
+          <table>
+            <thead><tr><th>Área</th><th>O que observar</th><th>Por que importa</th></tr></thead>
+            <tbody>
+              <tr><td>Taxas de negociação</td><td>Maker/taker, spreads, descontos por volume e campanhas temporárias.</td><td>Custos pequenos podem afetar muito usuários frequentes ou estratégias automatizadas.</td></tr>
+              <tr><td>Depósitos e saques</td><td>Redes suportadas, mínimos, limites, prazos, confirmações e taxas de rede.</td><td>Erros de rede ou limites não verificados podem gerar atrasos ou perda de fundos.</td></tr>
+              <tr><td>Verificação de conta</td><td>Níveis KYC, documentos aceitos, revisão manual e restrições regionais.</td><td>Alguns recursos podem ficar bloqueados até a conclusão da verificação.</td></tr>
+              <tr><td>Segurança pessoal</td><td>2FA, lista branca de endereços, alertas, senhas fortes e controle de dispositivos.</td><td>A segurança do usuário é parte essencial da proteção, mesmo quando a plataforma tem controles internos.</td></tr>
+              <tr><td>Suporte</td><td>Canais oficiais, tempo de resposta, base de conhecimento e status page.</td><td>Em momentos de volatilidade, suporte e comunicação clara reduzem risco operacional.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <div class="container">
+        <div class="section-head">
+          <h2>Latest Futurionex news and external references</h2>
+          <p>As referências abaixo foram adicionadas a partir dos links fornecidos. Os resumos são editoriais e devem ser conferidos nos textos originais.</p>
+        </div>
+        <div class="source-grid">
+          <article class="card source-card">
+            <div class="source-meta"><span>CoinMarketCap Community</span><span>15 Jun 2026</span></div>
+            <h3>Withdrawal time and security review process</h3>
+            <p>O post descreve uma estrutura de saque em camadas: retiradas pequenas com processamento automatizado após 2FA e retiradas maiores com checagens de ambiente, compliance, triagem de endereço, aprovação multiassinatura/cold wallet e broadcast em blockchain. Também menciona possíveis atrasos por alertas de risco, redefinição de senha ou revisão KYC.</p>
+            <a href="https://coinmarketcap.com/community/post/376993856" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>CoinMarketCap Community</span><span>15 Jun 2026</span></div>
+            <h3>Order placement experience: limit orders, market orders and cancellation feedback</h3>
+            <p>A publicação relata observações sobre profundidade de livro L2, execução de ordens limitadas e de mercado, slippage controlado em ordens maiores e resposta de cancelamento sob concorrência. O conteúdo posiciona a Futurionex como infraestrutura voltada tanto a varejo quanto a traders algorítmicos.</p>
+            <a href="https://coinmarketcap.com/community/post/376992986" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>CoinMarketCap Community</span><span>15 Jun 2026</span></div>
+            <h3>Compliance framework: MSB, Reg D and FSP approvals</h3>
+            <p>O texto diferencia os limites de cada estrutura: MSB 31000306664085 como foco em AML/CTF e KYC, SEC CIK 0002084764 / Form D como registro de oferta e não licença operacional, e FSP1011374 / NZBN 9429053284082 como registro de prestador de serviços financeiros na Nova Zelândia. A conclusão editorial é que a estrutura melhora legitimidade e flexibilidade, mas não elimina riscos de mercado, custódia ou liquidez.</p>
+            <a href="https://coinmarketcap.com/community/post/376996051" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>Paragraph</span><span>15 Jun 2026</span></div>
+            <h3>Deconstructing the compliance framework of Futurionex</h3>
+            <p>O artigo aprofunda a tese de “distributed compliance defense”: uma combinação de registros em diferentes jurisdições pode reduzir dependência regulatória de um único país e reforçar canais de compliance, mas deve ser lida com realismo quanto ao escopo jurídico e aos limites de supervisão.</p>
+            <a href="https://paragraph.com/@lucas_listing/deconstructing-the-compliance-framework-of-futurionex-what-is-the-true-value-of-msb-reg-d-and-fsp-regulatory-approvals?referrer=0x6924067218A8ee1467B50731bE3c2b3fdCE930A7" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>Binance Square</span><span>External link</span></div>
+            <h3>Futurionex reference on Binance Square</h3>
+            <p>Este link foi incluído como referência externa fornecida pelo solicitante. Como o conteúdo não pôde ser extraído automaticamente neste ambiente, o visitante deve abrir a página original para verificar título, autor, data e texto completo antes de usar qualquer informação.</p>
+            <a href="https://www.binance.com/en/square/post/334364090561874" target="_blank" rel="noopener noreferrer">View source →</a>
+          </article>
+          <article class="card source-card">
+            <div class="source-meta"><span>Editorial synthesis</span><span>Updated 23 Jun 2026</span></div>
+            <h3>How these sources affect the review</h3>
+            <p>As referências reforçam três eixos da avaliação: eficiência de trading, segurança de saques e interpretação correta do compliance. Elas também justificam manter avisos de risco claros, porque performance operacional e registros públicos não removem volatilidade, risco de custódia ou necessidade de due diligence.</p>
+            <a href="#risk">Read risk warning →</a>
+          </article>
+
+          <article class="card source-card">
+            <div class="source-meta"><span>SEC EDGAR</span><span>Public filing</span></div>
+            <h3>Futurionex Blockchain Trading Ltd — CIK 0002084764</h3>
+            <p>O arquivo público da SEC identifica Futurionex Blockchain Trading Ltd com CIK 0002084764, endereço em 675 15TH STREET, DENVER, CO 80202, e Form D protocolado em 2025-09-08. Este registro confirma dados corporativos e de oferta, mas não deve ser lido como licença operacional completa de exchange.</p>
+            <a href="https://data.sec.gov/submissions/CIK0002084764.json" target="_blank" rel="noopener noreferrer">View SEC data →</a>
+          </article>
+        </div>
+        <div class="source-note"><strong>Source policy:</strong> links de comunidade e artigos externos são tratados como fontes públicas de referência, não como prova definitiva. Sempre confirme dados, datas e escopo nas páginas originais.</div>
+      </div>
+    </section>
+
+    <section id="licenses">
+      <div class="container">
+        <div class="section-head">
+          <h2>Licenses, registrations and verification links</h2>
+          <p>测评站域名为 <strong>futurionex.net</strong>；平台官网为 <strong>futurionex.com</strong>。以下信息用于牌照/注册说明，并尽量附上可查证入口。</p>
+        </div>
+
+        <div class="registry-panel">
+          <div class="registry-top">
+            <div>
+              <h3>Futurionex Blockchain Trading Ltd — registry summary</h3>
+              <p>核心登记信息、官方查询链接与范围说明集中展示，方便访客自行核验。</p>
+            </div>
+            <span class="status-badge">✓ Public registry references included</span>
+          </div>
+          <table class="registry-table" aria-label="Futurionex license and registry summary">
+            <tbody>
+              <tr>
+                <th>Legal entity</th>
+                <td>
+                  <strong>Futurionex Blockchain Trading Ltd</strong><br />
+                  Address: 675 15th Street, Denver, Colorado 80202, United States
+                  <div class="verify-links">
+                    <a class="verify-link" href="https://data.sec.gov/submissions/CIK0002084764.json" target="_blank" rel="noopener noreferrer">SEC company JSON</a>
+                    <a class="verify-link" href="https://www.sec.gov/Archives/edgar/data/2084764/000208476425000001/0002084764-25-000001-index.htm" target="_blank" rel="noopener noreferrer">SEC filing index</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>U.S. MSB</th>
+                <td>
+                  <strong>MSB Registration No.: 31000306664085</strong><br />
+                  Scope note: Money Services Business registration is primarily associated with AML / CTF / KYC obligations and transaction monitoring. It is not the same as a full securities, futures, derivatives or exchange prudential license.
+                  <div class="verify-links">
+                    <a class="verify-link" href="https://www.fincen.gov/msb-registrant-search" target="_blank" rel="noopener noreferrer">FinCEN MSB Registrant Search</a>
+                    <a class="verify-link" href="https://hackmd.io/@HimalayaInvestment/Sy8HsIwlMl" target="_blank" rel="noopener noreferrer">Public article reference</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>SEC EDGAR</th>
+                <td>
+                  <strong>CIK No.: 0002084764</strong><br />
+                  Form D Accession: 0002084764-25-000001 · File No. 021-556888 · Filed: 2025-09-08. Form D relates to private offering / registration exemption disclosure and should not be interpreted as an operating license for all exchange services.
+                  <div class="verify-links">
+                    <a class="verify-link" href="https://data.sec.gov/submissions/CIK0002084764.json" target="_blank" rel="noopener noreferrer">SEC submissions</a>
+                    <a class="verify-link" href="https://www.sec.gov/Archives/edgar/data/2084764/000208476425000001/0002084764-25-000001.txt" target="_blank" rel="noopener noreferrer">SEC Form D raw file</a>
+                    <a class="verify-link" href="https://www.sec.gov/edgar/browse/?CIK=0002084764" target="_blank" rel="noopener noreferrer">SEC browse CIK</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>New Zealand FSP</th>
+                <td>
+                  <strong>FSP Registration No.: FSP1011374 · NZBN: 9429053284082</strong><br />
+                  Scope note: FSP is a financial service provider registration in New Zealand. The visitor should verify service categories, dispute resolution information and any FMA-specific license status directly in official registers.
+                  <div class="verify-links">
+                    <a class="verify-link" href="https://fsp-app.companiesoffice.govt.nz/orp-fsp-register/viewInstance/view.html?id=757b371f1b6eec44bad4008937136b8f85db3f64b1f5470bfa6aeea866cbf71c&_timestamp=14822708354608501" target="_blank" rel="noopener noreferrer">NZ FSP Register</a>
+                    <a class="verify-link" href="https://companies-register.companiesoffice.govt.nz/" target="_blank" rel="noopener noreferrer">NZ Companies Register</a>
+                    <a class="verify-link" href="https://www.nzbn.govt.nz/mynzbn/search/" target="_blank" rel="noopener noreferrer">NZBN lookup</a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="license-note-grid">
+          <div class="license-note"><strong>MSB meaning</strong><span>Useful for AML/KYC and money-services compliance, but not a blanket approval for investment products or exchange custody safety.</span></div>
+          <div class="license-note"><strong>Form D meaning</strong><span>Shows a SEC private offering disclosure / exemption pathway. It is not an operating license for crypto trading services.</span></div>
+          <div class="license-note"><strong>FSP meaning</strong><span>Shows New Zealand financial service provider registration. Specific service scope must be checked in the official register.</span></div>
+        </div>
+
+        <div class="section-head" style="margin-top:34px">
+          <h2>License applications and monitoring status</h2>
+          <p>已经在申请或待公开确认的牌照应与已获注册分开展示。当前公开检索未找到可独立核验的新增申请编号，因此先按“pending confirmation”处理，避免夸大。</p>
+        </div>
+        <div class="pending-grid">
+          <div class="pending-item">
+            <b>Additional VASP / crypto-asset permissions</b>
+            <p>Platform-facing disclosures may describe continued compliance expansion, but no additional official application number was independently confirmed during this update.</p>
+            <span class="pending-pill">Pending public confirmation</span>
+          </div>
+          <div class="pending-item">
+            <b>Regional fiat / payment channel permissions</b>
+            <p>Any payment, fiat gateway or local money-service permission should be verified by jurisdiction and legal entity before being presented as approved.</p>
+            <span class="pending-pill">Verification required</span>
+          </div>
+          <div class="pending-item">
+            <b>Future regulatory filings</b>
+            <p>Future SEC, FinCEN, FSP, FMA, VASP or other registry updates should be added here only with registry links, filing numbers, dates and exact scope notes.</p>
+            <span class="pending-pill">Watchlist</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p>Respostas curtas para dúvidas comuns de visitantes que avaliam a Futurionex.</p>
+        </div>
+        <div class="faq">
+          <details open><summary>A Futurionex é adequada para iniciantes?</summary><p>A interface e os materiais podem ajudar usuários menos experientes, mas iniciantes devem começar com valores pequenos, evitar alavancagem, ativar 2FA e estudar volatilidade, taxas e regras de saque antes de operar.</p></details>
+          <details><summary>O rating 4.3 / 5 é uma garantia?</summary><p>Não. A nota é uma síntese editorial dos critérios apresentados nesta página. Ela não garante segurança absoluta, lucro, liquidez, aprovação regulatória ou disponibilidade futura de serviços.</p></details>
+          <details><summary>Como verificar a documentação citada?</summary><p>Use os links abertos na seção de documentação e compare nomes, números, datas, entidades e escopo: Legal Name, MSB 31000306664085, SEC CIK 0002084764, FSP1011374 e NZBN 9429053284082. Registros públicos devem ser lidos com atenção porque nem todos equivalem a autorização para todos os tipos de serviço financeiro.</p></details>
+          <details><summary>Quais práticas de segurança o usuário deve adotar?</summary><p>Ativar autenticação de dois fatores, usar senhas únicas, confirmar URLs oficiais, evitar links recebidos por mensagem, revisar endereços de saque e manter dispositivos protegidos são medidas essenciais.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="risk">
+      <div class="container">
+        <div class="risk">
+          <h2>Risk warning</h2>
+          <p>Negociar criptoativos envolve risco elevado. A volatilidade pode gerar perdas rápidas, e fatores como liquidez, custódia, falhas técnicas, alterações regulatórias, revisão de saques e comportamento de mercado podem afetar resultados.</p>
+          <ul class="risk-list">
+            <li>Este site é informativo e independente; não processa cadastros, depósitos, saques ou suporte oficial.</li>
+            <li>Não há garantia de lucro, estabilidade de preço, aprovação regulatória futura ou disponibilidade em todas as regiões.</li>
+            <li>Antes de usar qualquer plataforma, consulte documentos oficiais, termos de serviço e, se necessário, um profissional qualificado.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p><strong>Portal de Análise Futurionex</strong><br />Site de review: futurionex.net · Site oficial da plataforma: futurionex.com · Conteúdo editorial e informativo, atualizado em 2026.</p>
+      <p>© 2026 Portal de Análise Independente. Nenhum dado de usuário é coletado nesta página estática.</p>
+    </div>
+  </footer>
 </body>
 </html>
